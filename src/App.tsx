@@ -1,11 +1,13 @@
-import { BasicTypes } from './typescript/BasicTypes';
+import { LiteralObjInterfaces } from './typescript/LiteralObjInterfaces';
 
 function App() {
+
   return (
     <div className="mt-2">
       <h1>React Native</h1>
       <hr />
-      <BasicTypes />
+      <LiteralObjInterfaces />
+      
     </div>
   );
 }
