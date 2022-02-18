@@ -1,4 +1,4 @@
-import { Functions } from './typescript/Functions';
+import { Counter } from './components/Counter';
 
 function App() {
 
@@ -6,7 +6,7 @@ function App() {
     <div className="mt-2">
       <h1>React Native</h1>
       <hr />
-      <Functions />
+      <Counter />
       
     </div>
   );
