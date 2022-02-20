@@ -1,23 +1,18 @@
-import { useState } from "react"
+import { useCounter } from "../hooks/useCounter";
 
-export const Counter = () => {
-
-  const [counter, setCounter ] = useState(0);
-
-  const addSubtract = ( num:number ) => {
-    setCounter( counter + num );
-  };
-
+export const CounterHook = ( ) => {
+  const { counter, addSubtract } = useCounter();
 
   return (
     <>
-      <div>Counter: {counter}</div>
+      <div>Counter by Custom Hook: {counter}</div>
       <button 
         className="btn btn-primary"
         onClick={ ()=>addSubtract(1) }
       >
         +1
       </button>
+      &nbsp;
       <button 
         className="btn btn-primary"
         onClick={ ()=>addSubtract(-1) }
