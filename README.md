@@ -9,3 +9,5 @@ What is the difference between: type, class, interface?
 - **interface:** Only exist in TS and is most easy to expand that Type.
   - The main goal of interfaces is to tell TS what my objects look like.
   - Create validation rules to objects
+
+# Install and config react Native with emulator and devices
