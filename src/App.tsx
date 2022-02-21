@@ -1,4 +1,4 @@
-import { CounterHook } from './components/CounterHook';
+import { Users } from './components/Users';
 
 function App() {
 
@@ -6,7 +6,7 @@ function App() {
     <div className="mt-2">
       <h1>React Native</h1>
       <hr />
-      <CounterHook />
+      <Users />
       
     </div>
   );
