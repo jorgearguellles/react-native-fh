@@ -1,4 +1,4 @@
-import { Login } from './components/Login';
+import { Users } from './components/Users';
 
 function App() {
 
@@ -6,7 +6,7 @@ function App() {
     <div className="mt-2">
       <h1>React Native</h1>
       <hr />
-      <Login />
+      <Users />
       
     </div>
   );
