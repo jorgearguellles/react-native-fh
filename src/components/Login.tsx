@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react'
+import React, { useEffect, useReducer } from 'react'
 
 // 2.1 step: Create a Interface to organize the initial State Type
 interface AuthState {
@@ -24,21 +24,47 @@ type AuthAction = { type: 'logout' };
 
 const authReducer = ( state:AuthState, action:AuthAction ):AuthState =>{
 
+  switch ( action.type ) {
+    case 'logout':
+      return {
+        validate: false,
+        token: null,
+        useName: '',
+        name: '',
+      }
+  
+    default:
+      return state;
+  }
 };
 
 
 export const Login = () => {
-
   
-  const [ state, dispatch ] = useReducer( authReducer, initialState );
+  const [ { validate }, dispatch ] = useReducer( authReducer, initialState );
+
+  useEffect( ()=> {
+    setTimeout( ()=>{
+      dispatch( { type: 'logout' } )
+    }, 1500)
+  }, []);
+
+  if( validate ){
+    return (
+      <>
+        <h2>Login</h2>
+
+        <div className='alert alert-info'>
+          Validating...
+        </div>
+      </>
+    )
+  }
 
   return (
     <>
       <h2>Login</h2>
 
-      <div className='alert alert-info'>
-        Validating...
-      </div>
       <div className='alert alert-danger'>
         No Authenticate 
       </div>
