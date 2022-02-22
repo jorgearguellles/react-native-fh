@@ -1,4 +1,4 @@
-import { Users } from './components/Users';
+import { Forms } from './components/Forms';
 
 function App() {
 
@@ -6,7 +6,7 @@ function App() {
     <div className="mt-2">
       <h1>React Native</h1>
       <hr />
-      <Users />
+      <Forms />
       
     </div>
   );
