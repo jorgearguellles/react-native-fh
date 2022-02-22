@@ -1,4 +1,4 @@
-# React Native + TypeScript
+# 0. React Native + TypeScript
 
 # Interfaces
 
@@ -10,4 +10,44 @@ What is the difference between: type, class, interface?
   - The main goal of interfaces is to tell TS what my objects look like.
   - Create validation rules to objects
 
-# Install and config react Native with emulator and devices
+# 1. Install and config react Native with emulator and devices
+
+## Diff between Expo CLI & ReactNative CLI. Command line Interface - CLI
+
+**Positive Points**
+
+| Expo CLI                                         | ReactNative CLI                                           |
+| ------------------------------------------------ | --------------------------------------------------------- |
+| Handle IOS and Android Builds                    | Generate a minimal need for run                           |
+| Provider of many native functionalities          | Generate IOS and Android independents native folder       |
+| Is perfect to beginners mobile developers        | Allow write native code by Platform ( Objective C, Swift) |
+| Allow run and proof the App in IOS without a Mac |                                                           |
+
+- Expo CLI have the **EJECT** like eject script in create-react-app
+- **Don't do EJECT**
+  - If you will public your App in App Stores
+  - If are you unhappy with native code
+  - You will enjoy the future Expo updates
+  - If you use Expo Push notifications services
+  - If you depend of Expo community
+
+**Negative Points**
+
+| Expo CLI                                             | ReactNative CLI                                   |
+| ---------------------------------------------------- | ------------------------------------------------- |
+| You can't extends a native App don't Expo support ir | You need dev environments. Android Studio y Xcode |
+
+**Commons positive Points**
+
+| Expo CLI & React Native CLI          |
+| ------------------------------------ |
+| Many packages supported by Expo & RN |
+| Hot reload supported                 |
+| Dev and see upload in physic devices |
+
+We will use react Native CLI because:
+
+- Deep learning in RN
+- Work with Xcode & Android Studio
+- Handle native modules
+- To know how to config and install everything
