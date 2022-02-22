@@ -51,3 +51,63 @@ We will use react Native CLI because:
 - Work with Xcode & Android Studio
 - Handle native modules
 - To know how to config and install everything
+
+# 2. Flex, Position, Box model
+
+## 2.1 Box Object Model
+
+1. Height
+2. Width
+3. Margin
+4. Border
+5. Padding
+6. Content
+
+![Box Model](./src/img/box-model.png)
+
+| Margin Property  | Description                           |
+| ---------------- | ------------------------------------- |
+| margin           | Apply 4 side margin                   |
+| marginLeft       | Apply left side margin                |
+| marginRight      | Apply right side margin               |
+| marginBottom     | Apply bottom side margin              |
+| marginTop        | Apply top side margin                 |
+| marginVertical   | Apply top and bottom side same margin |
+| marginHorizontal | Apply left and right side same margin |
+
+| Padding Property  | Description                            |
+| ----------------- | -------------------------------------- |
+| padding           | Apply 4 side padding                   |
+| paddingLeft       | Apply left side padding                |
+| paddingRight      | Apply right side padding               |
+| paddingBottom     | Apply bottom side padding              |
+| paddingTop        | Apply top side padding                 |
+| paddingVertical   | Apply top and bottom side same padding |
+| paddingHorizontal | Apply left and right side same padding |
+
+| Border Property   | Description               |
+| ----------------- | ------------------------- |
+| borderWidth       | Apply 4 side border width |
+| borderLeftWidth   | Apply left side border    |
+| borderRightWidth  | Apply right side border   |
+| borderBottomWidth | Apply bottom side border  |
+| borderTopWidth    | Apply top side border     |
+| borderColor       | Apply color on demand     |
+
+## 2.2 Position
+
+1. Absolute
+2. Relative
+3. Top
+4. Left
+5. Right
+6. Bottom
+
+## 2.3 Flex box
+
+1. Direction
+2. Location
+3. Alignment
+4. Stretch
+5. Shrink
+6. Proportions
